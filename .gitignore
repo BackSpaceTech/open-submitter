@@ -1,3 +1,6 @@
-*.txt
 *.png
 node_modules/*
+accounts/*
+articles/*
+settings/*
+backlinks/*
