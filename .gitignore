@@ -3,5 +3,5 @@
 node_modules/*
 accounts/*
 articles/*
-settings/*
 backlinks/*
+settings/indexers.txt
