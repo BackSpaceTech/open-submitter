@@ -90,7 +90,7 @@
   };
 
   exports.indexers = function(filePath) {
-    var a, buffer, i, ins, status, temp, temp2, tempIndexers, tempIndexers2, _i, _ref;
+    var a, buffer, i, ins, noIndexer, status, temp, tempIndexers, _i, _ref;
     tempIndexers = [];
     status = '';
     if (fs.exists(filePath) && fs.isFile(filePath)) {
@@ -126,15 +126,19 @@
       }
       ins.close();
       a = 0;
-      temp2 = 0;
-      tempIndexers2 = [];
+      noIndexer = true;
       for (i = _i = 0, _ref = tempIndexers.length; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
         if (tempIndexers[i].status.toLowerCase() === 'ok') {
-          tempIndexers2[temp2] = tempIndexers[i];
-          ++temp2;
+          if (noIndexer) {
+            tempIndexers[0] = tempIndexers[i];
+            noIndexer = false;
+          }
         }
       }
-      return tempIndexers2;
+      if (tempIndexers.length === 0) {
+        tempIndexers[0].username === 'no accounts';
+      }
+      return tempIndexers[0];
     } else {
       return console.log('Could not load ' + filePath);
     }

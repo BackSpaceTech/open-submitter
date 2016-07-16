@@ -68,16 +68,8 @@ for i in [0...services.length]
 numLoops *= numPosts
 
 # Load indexer
-numIndexerLoops = 0
-indexers = []
-indexersLogin = []
-currentIndexer = 0
-for i in [0...indexerDetails.length]
-  if indexerDetails[i].status.toLowerCase() == 'ok'
-    indexers[currentIndexer] = require('./indexers/' + indexerDetails[i].name)
-    indexersLogin[currentIndexer] = indexerDetails[i]
-    numIndexerLoops += indexers[currentIndexer].steps.length
-    ++currentIndexer
+if indexerDetails.status.toLowerCase() == 'ok'
+  indexer = require('./indexers/' + indexerDetails.name)
 
 # ---------------- Import Files  ------------------------
 
@@ -109,10 +101,6 @@ errorMsg = ->
   skipService()
 
 # ------------------------ Step Commands  ------------------------------
-currentSubmission = 0
-currentService = 0
-currentIndexer = 0
-currentIndexerStep = 0
 
 casper.doStep = (objStep, serviceName) ->
   @echo 'Step: ' + currentStep
@@ -202,19 +190,17 @@ casper.doStep = (objStep, serviceName) ->
             @capture('./capture/error.png')
 # -------------------------- Login-Indexer -----------------------------------
   else if objStep.command == 'login-indexer'
-    @capture('./capture/indexer0.png')
-    if indexersLogin.length == 0
-      @echo 'No indexer accounts set up!'
+    if indexer.username == 'no accounts'
+      @echo 'No indexer accounts!'
     else
-      @echo 'Logging in: ' +
-        indexersLogin[currentIndexer].username + '...'
+      @echo 'Logging in: ' +  indexerDetails.username + '...'
       # Login to Indexer
       tempObj =
         formElem: objStep.form
         nameElem: objStep.username
         pwdElem: objStep.password
-        name: indexersLogin[currentIndexer].username
-        pwd: indexersLogin[currentIndexer].password
+        name: indexerDetails.username
+        pwd: indexerDetails.password
         submit: objStep.submit
       @evaluate ((s) ->
         document.querySelector(s.nameElem).value = s.name
@@ -223,23 +209,22 @@ casper.doStep = (objStep, serviceName) ->
           document.querySelector(s.formElem).submit()
         return
       ), tempObj
-      @capture('./capture/indexer1.png')
+      @capture('./capture/indexer0.png')
+      @echo 'Waiting for login confirmation...'
       if objStep.submit
-        @echo 'Waiting for login confirmation...'
-        if objStep.confirm
-          @waitForSelector objStep.confirm,
-            ->
-              @echo 'Login success.'
-            ->
-              @capture('./capture/error.png')
-              errorMsg()
-        else if objStep.confirmtxt
-          @waitForText objStep.confirmtxt,
-            ->
-              @echo 'Login success.'
-            ->
-              @capture('./capture/error.png')
-              errorMsg()
+        @waitForSelector objStep.confirm,
+          ->
+            @echo 'Login success.'
+          ->
+            errorMsg()
+            @capture('./capture/error.png')
+      else if objStep.confirmtxt
+        @waitForText objStep.confirmtxt,
+          ->
+            @echo 'Login success.'
+          ->
+            errorMsg()
+            @capture('./capture/error.png')
 # --------------------------- Click ---------------------------------------
   if objStep.command == 'click'
     if objStep.selector
@@ -348,6 +333,10 @@ casper.doStep = (objStep, serviceName) ->
 
 # ------------------ Submit to Services  ------------------------
 
+currentSubmission = 0
+currentService = 0
+currentIndexerStep = 0
+console.log 'numLoops: ' + numLoops
 casper.start()
 casper.repeat numLoops, ->
   @then ->
@@ -370,17 +359,18 @@ casper.repeat numLoops, ->
       return
     return
 
-casper.repeat numIndexerLoops, ->
+casper.repeat (indexer.steps.length + 1), ->
   @then ->
-    if currentIndexer < indexers.length
-      serviceName = indexers[currentIndexer].name
-      objStep = indexers[currentIndexer].steps[currentIndexerStep]
-      @.doStep(objStep, serviceName)
-      ++currentIndexerStep
-      if currentIndexerStep == indexers[currentIndexer].steps.length
-        ++currentIndexer
-        currentIndexerStep = 0
-
+    if currentIndexerStep == indexer.steps.length
+      serviceName = indexerDetails.name
+      console.log ('Submitted backlinks to '+serviceName + '\n').green
+    else
+      if indexerDetails.status.toLowerCase() == 'ok'
+        serviceName = indexerDetails.name
+        objStep = indexer.steps[currentIndexerStep]
+        @.doStep(objStep, serviceName)
+        @capture('./capture/indexer' + currentIndexerStep + '.png')
+        ++currentIndexerStep
 
 casper.run ->
   console.log  ('Finished all submissions.').green

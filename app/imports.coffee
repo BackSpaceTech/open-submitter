@@ -111,13 +111,15 @@ exports.indexers = (filePath) ->
         tempIndexers[a].status = temp
     ins.close()
     a = 0
-    temp2 = 0
-    tempIndexers2 = []
+    noIndexer = true
     for i in [0...tempIndexers.length]
       if tempIndexers[i].status.toLowerCase() == 'ok'
-        tempIndexers2[temp2] = tempIndexers[i]
-        ++temp2
-    tempIndexers2 # Return Indexer
+        if noIndexer
+          tempIndexers[0] = tempIndexers[i]
+          noIndexer = false
+    if tempIndexers.length == 0
+      tempIndexers[0].username == 'no accounts'
+    tempIndexers[0] # Return Indexer
   else
     console.log 'Could not load ' + filePath
 
