@@ -1,6 +1,7 @@
 # Open Submitter
 SEO Backlinking App
 
+<<<<<<< HEAD
 ## SEO Backlinking software:
 - Spins articles
 - Inserts backlinks
@@ -18,4 +19,8 @@ CasperJS v1.1.1 or greater
 
 ## More details at the [Open Submitter Home Page][76d3e968]
 
+=======
+## More details at the [Open Submitter Home Page][76d3e968]
+
+>>>>>>> 91cb82287c973319528c6e415d20ed06c3ba9151
   [76d3e968]: http://opensubmitter.org/ "Free and open source backlinking software app."
