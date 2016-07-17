@@ -1,0 +1,8 @@
+#name#
+wordpress
+#status#
+ok
+#name#
+blogdotcom
+#status#
+ok
