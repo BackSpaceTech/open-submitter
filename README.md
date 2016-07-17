@@ -12,9 +12,15 @@ SEO Backlinking App
 
   [00c3cdf7]: http://backlinksindexer.com/ "Preferred"
 ## Prerequisites
-- NodeJS v4.4.7 or greater
-- PhantomJS v2.1 or greater
-- CasperJS v1.1.1 or greater
+- [NodeJS][ca1dffb7] v4.4.7 or greater
+- [PhantomJS][6997c770] v2.1 or greater
+- [CasperJS][476ee510] v1.1.1 or greater
+- [Cmder][9924c39d] (optional)
+
+  [ca1dffb7]: http://nodejs.org/ "NodeJS"
+  [6997c770]: http://phantomjs.org/ "PhantomJS"
+  [476ee510]: http://casperjs.org/ "CasperJS"
+  [9924c39d]: http://cmder.net/ "Cmder"
 
 
 ## More details at the [Open Submitter Home Page][76d3e968]
