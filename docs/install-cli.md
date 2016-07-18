@@ -49,6 +49,16 @@ Download archive file (zip or tar)
 
 Extract archive to the location you want Open Submitter.
 
+## Create additional required folders
+
+The following additional folders need to be created after the archive is extracted. Make sure all folder names are lowercase:
+- accounts
+- articles
+- backlinks
+- capture
+
+![](./img/install6.PNG)
+
 ## Set up Sibbel
 
 Sibble will notify you by email of any repository changes to repositories you have starred. Always update immediately with new releases which can include bug fixes and new features and services. Sibbel does not spam you.
