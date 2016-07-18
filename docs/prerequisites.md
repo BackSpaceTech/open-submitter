@@ -31,6 +31,16 @@ If everything is installed correctly each command will return the curent version
 
 ## Download latest release of Open Submitter
 
+Go to the releases page. Regularly check this page for new releases which include bug fixes and new features and services.
+
+![](./img/github-release.PNG)
+
+Download archive file (zip or tar)
+
+![](./img/github-release2.PNG)
+
+Extract archive to the location you want Open Submitter.
+
 [Documentation Home][bdc43f25]
 
   [bdc43f25]: readme.md "Open Submitter Documentation"
