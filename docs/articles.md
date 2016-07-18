@@ -76,8 +76,17 @@ Images make articles look more interesting and less spammy. Open Submitter selec
 ![](./img/articles4.PNG)
 
 
-## Create Submission File
+## Create and Save Submission File
 
+Click on "Preview Submission" to see your final submission.
+
+![](./img/articles5.PNG)
+
+![](./img/articles6.PNG)
+
+Now Save the article submission file to the articles folder. Please note it must be saved in the article folder only for open submitter to find it. If you have multiple submission files you can use multiple submission file names. All file names must have the .txt file extension. If you want multiple submissions in a single file simply use an editor such as Notepad++ and add then one after the other. Open Submitter will randomly select articles if multiple are available.
+
+![](./img/articles7.PNG)
 
 
 [Documentation Home][91a747ec]
