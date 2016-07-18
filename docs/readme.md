@@ -1,7 +1,7 @@
 # Open Submitter Documentation
 
 ## Contents:
-- [Install CLI][f159407d]
+- [Set Up CLI][f159407d]
 - Accounts
 - Articles
 - Indexers

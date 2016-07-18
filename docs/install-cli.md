@@ -33,7 +33,7 @@ If everything is installed correctly each command will return the curent version
 
 ## Download latest release of Open Submitter
 
-Go to the releases page. Regularly check this page for new releases which include bug fixes and new features and services.
+Go to the releases page.
 
 ![](./img/github-release.PNG)
 
@@ -42,6 +42,25 @@ Download archive file (zip or tar)
 ![](./img/github-release2.PNG)
 
 Extract archive to the location you want Open Submitter.
+
+## Set up Sibbel
+
+Sibble will notify you by email of any repository changes to repositories you have starred. Always update immediately with new releases which can include bug fixes and new features and services. Sibbel does not spam you.
+
+First open a free GitHub account:
+
+![](./img/install.PNG)
+
+Then star the Open Submitter repository:
+
+![](./img/install2.PNG)
+
+Then go to to Sibbel.com and set up Sibble.
+
+![](./img/install3.PNG)
+
+You will now be notified by email of any new releases to Open Submitter.
+### When copying a new release over an old, make sure you save your accounts, backlinks and settings/indexers.txt files before copying the new files.
 
 [Documentation Home][bdc43f25]
 
