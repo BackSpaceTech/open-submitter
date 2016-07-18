@@ -1,7 +1,7 @@
 # Open Submitter
 SEO Backlinking App
 
-![](./docs/img/seo-machine.png)
+![](./docs/img/home-image.png)
 
 ## SEO Backlinking software:
 - Spins articles
