@@ -67,13 +67,17 @@ To create backlinks in your article body and description where you want insert l
 
 Keywords and links need to be supplied for Open Submitter to use. These are comma separated. Open Submitter will select randomly. Spin syntax can be used to group together long tail keywords and less important links. This way you can influence the ratio of selection of links and keywords.
 
-
+![](./img/articles3.PNG)
 
 ## Add Images
 
 Images make articles look more interesting and less spammy. Open Submitter selects images at random from the images list supplied. These are comma separated URLs. The imgaes are randomly located vertically and randomly floating left or right. Please note not all services accept images.
 
+![](./img/articles4.PNG)
+
+
 ## Create Submission File
+
 
 
 [Documentation Home][91a747ec]
