@@ -1,7 +1,7 @@
 # Open Submitter Documentation
 
 ## Contents:
-- [Prerequisites][489d3415]
+- [Install CLI][f159407d]
 - Accounts
 - Articles
 - Indexers
@@ -9,6 +9,7 @@
 - Creating New Services
 
   [489d3415]: prerequisites.md "Open Submitter Prerequisites"
+  [f159407d]: install-cli.md "Open Submitter CLI Install"
 
 
 ## More tutorials and information at the [Open Submitter Home Page][76d3e968]
