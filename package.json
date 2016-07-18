@@ -1,8 +1,0 @@
-{
-  "name": "open-submitter",
-  "description": "Free and open source SEO backlinking software",
-  "author": "Paul Coady - BackSpace Technology LLC",
-  "dependencies": {
-    "colors": ">= 1.1.2"
-  }
-}
