@@ -10,6 +10,7 @@ SEO Backlinking App
 - Submits backlinks to indexing services
 - Additional services can be added through simple command steps
 
+![](./docs/img/seo-machine.svg)
 
 ## Prerequisites
 - [NodeJS][ca1dffb7] v4.4.7 or greater
