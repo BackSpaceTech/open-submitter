@@ -31,3 +31,23 @@ A great review
 This is a cool blog post
 
 My great commentary
+
+**Important Note**
+
+Do not nest spin as it will give unpredictable results with Open Submitter. e.g.
+
+Don't use this:
+
+{{this|this2}|this3}
+
+Only use this:
+
+{this|this2|this3}
+
+## Spinning Tools
+
+Creating articles of any size in spin syntax manually is very slow process. The most popular tool used by professional SEO consultants to speed up this process is [The Best Spinner][3a94b86c].
+
+
+
+  [3a94b86c]: http://paydotcom.net/r/95330/pcoady/27453918/ "The Best Spinner"
