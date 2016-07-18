@@ -76,6 +76,9 @@ Images make articles look more interesting and less spammy. Open Submitter selec
 ## Create Submission File
 
 
+[Documentation Home][91a747ec]
+
+  [91a747ec]: readme.md "Open Submitter Documentation"
 
 
   [3a94b86c]: http://paydotcom.net/r/95330/pcoady/27453918/ "The Best Spinner"
