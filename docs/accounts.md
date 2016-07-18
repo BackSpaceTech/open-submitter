@@ -4,7 +4,7 @@ Accounts are required for Open Submitter to login and submit your articles.
 
 ## Creating Accounts
 
-Each service (e.g. Wordpress) will have its own process for creating accounts. Normally only one account per email address can be created. Free emails can be created at mail.ru (use Google Chrome Translate to view in English). After your accounts are created you will need the login names (or email addresses if applicable), passwords and site names (if applicable). The more accounts you create, the more backlinks can be created.
+Each service (e.g. Wordpress) will have its own process for creating accounts. Normally only one account per email address can be created. Free emails can be created at mail.ru (use Google Chrome Translate to view in English). After your accounts are created you will need the login names (or email addresses if applicable), passwords and site names (if applicable). Try to create many accounts for each service.
 
 ## Creating Accounts List file
 
