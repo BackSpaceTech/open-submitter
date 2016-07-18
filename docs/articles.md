@@ -2,6 +2,7 @@
 
 Open Submitter article submission files contain the following information:
 - Title of article to be submitted in spin text.
+- Description of article in spin text.
 - Body of article in spin text.
 - Keywords in spin text and comma separated.
 - Link URLs in spin text and comma separated.
@@ -47,6 +48,13 @@ Only use this:
 ## Spinning Tools
 
 Creating articles of any size in spin syntax manually is very slow process. The most popular tool used by professional SEO consultants to speed up this process is [The Best Spinner][3a94b86c].
+
+## Create an Article Submission
+
+Open the GUI and click "Create Article"
+
+Enter the title, description and body of your article.
+
 
 
 

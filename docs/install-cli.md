@@ -10,11 +10,14 @@ NPM modules need to be installed globally (npm install -g):
 - [PhantomJS][6997c770] v2.1 or greater
 - [CasperJS][476ee510] v1.1.1 or greater
 - [Cmder][9924c39d] (optional)
+- [The Best Spinner][a6914f8e] (optional)
 
   [ca1dffb7]: http://nodejs.org/ "NodeJS"
   [6997c770]: http://phantomjs.org/ "PhantomJS"
   [476ee510]: http://casperjs.org/ "CasperJS"
   [9924c39d]: http://cmder.net/ "Cmder"
+  [a6914f8e]: http://paydotcom.net/r/95330/pcoady/27453918/ "The Best Spinner"
+
 
 ## Update Environment Variables
 Make sure your path environment variables are updated for NodeJS, PhantomJS, CasperJS and Cmder with the executable path.
