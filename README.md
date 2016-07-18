@@ -23,6 +23,6 @@ SEO Backlinking App
   [9924c39d]: http://cmder.net/ "Cmder"
 
 
-## More details at the [Open Submitter Home Page][76d3e968]
+## More details in the [documentation][bd90079e]
 
-  [76d3e968]: http://opensubmitter.org/ "Free and open source backlinking software app."
+  [bd90079e]: https://github.com/BackSpaceTech/open-submitter/tree/master/docs "Open Submitter Documentation"
