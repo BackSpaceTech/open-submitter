@@ -35,11 +35,11 @@ If everything is installed correctly each command will return the curent version
 
 Go to the releases page.
 
-![](./img/github-release.PNG)
+![](./img/install4.PNG)
 
 Download archive file (zip or tar)
 
-![](./img/github-release2.PNG)
+![](./img/install5.PNG)
 
 Extract archive to the location you want Open Submitter.
 
