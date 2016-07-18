@@ -1,6 +1,8 @@
 # Open Submitter
 SEO Backlinking App
 
+![](./docs/img/seo-machine.png)
+
 ## SEO Backlinking software:
 - Spins articles
 - Inserts backlinks
@@ -9,8 +11,6 @@ SEO Backlinking App
 - Saves backlink URL to file
 - Submits backlinks to indexing services
 - Additional services can be added through simple command steps
-
-![](./docs/img/home.png)
 
 ## Prerequisites
 - [NodeJS][ca1dffb7] v4.4.7 or greater
