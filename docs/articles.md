@@ -49,11 +49,31 @@ Only use this:
 
 Creating articles of any size in spin syntax manually is very slow process. The most popular tool used by professional SEO consultants to speed up this process is [The Best Spinner][3a94b86c].
 
-## Create an Article Submission
+## Create an Article
 
 Open the GUI and click "Create Article"
 
 Enter the title, description and body of your article.
+
+![](./img/articles.PNG)
+
+## Add Link Tags to Article
+
+To create backlinks in your article body and description where you want insert link tags (#links#). Open Submitter will insert a random keyword with a random link from the article keyword and link list. If no link tags are put in, Open Submitter will place one at the end. Do not insert too many link tags as search engines may reject the article as spam. Don't exceed one link per two paragraphs. The best results will come from having only one link only in the article body and description. Do not put links in title as these will not be recognised by Open Submitter.
+
+![](./img/articles2.PNG)
+
+## Add keywords, links.
+
+Keywords and links need to be supplied for Open Submitter to use. These are comma separated. Open Submitter will select randomly. Spin syntax can be used to group together long tail keywords and less important links. This way you can influence the ratio of selection of links and keywords.
+
+
+
+## Add Images
+
+Images make articles look more interesting and less spammy. Open Submitter selects images at random from the images list supplied. These are comma separated URLs. The imgaes are randomly located vertically and randomly floating left or right. Please note not all services accept images.
+
+## Create Submission File
 
 
 
