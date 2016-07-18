@@ -1,5 +1,5 @@
 fs = require('fs')
-colors = require('colors')
+consolex = require('./console-xtra')
 
 exports.accounts = (filePath) ->
   # Load accounts.csv
@@ -103,12 +103,16 @@ exports.indexers = (filePath) ->
         status = 'status'
       else if status == 'name'
         tempIndexers[a].name = temp
+        status = ''
       else if status == 'username'
         tempIndexers[a].username = temp
+        status = ''
       else if status == 'password'
         tempIndexers[a].password = temp
+        status = ''
       else if status == 'status'
         tempIndexers[a].status = temp
+        status = ''
     ins.close()
     a = 0
     temp2 = 0

@@ -1,6 +1,6 @@
 fs = require('fs')
 system = require('system')
-colors = require('colors')
+consolex = require('./app/console-xtra')
 imports = require('./app/imports')
 spinner = require('./app/spinner')
 page = require('webpage').create()
@@ -13,20 +13,20 @@ casper = require('casper').create(
   waitTimeout: 60000  # 1 min default wait timeout
   verbose: true
   onError: (self, msg) ->
-    console.log ('FATAL:' + msg).red
+    consolex.log 'red', 'FATAL:' + msg
     self.exit()
     return
   onTimeout: (self, msg) ->
     @.capture('./capture/timeout.png')
-    console.log ('general timeout error: ' + msg).red
+    consolex.log 'red', 'general timeout error: ' + msg
     return
   onStepTimeout: (self, msg) ->
     @.capture('./capture/timeout.png')
-    console.log ('step timeout error: step ' + msg).red
+    consolex.log 'red', 'step timeout error: step ' + msg
     return
   onWaitTimeout: (self, msg) ->
-    @.capture('./capture/timeout.png')
-    console.log ('wait timeout error: ' + msg).red
+    @.capture ('./capture/timeout.png')
+    consolex.log 'red','wait timeout error: ' + msg
     return
 )
 
@@ -39,11 +39,11 @@ fileBacklinks = './backlinks/' + casper.cli.get(2) + '.txt'
 numPosts = casper.cli.get(3)
 
 console.log '\n'
-console.log '---------------- Submission Details ----------------------'.cyan
-console.log ('Accounts file: ' + fileAccounts).cyan
-console.log ('Articles file: ' + fileArticles).cyan
-console.log ('Backlinks saved to file: ' + fileBacklinks).cyan
-console.log ('Number of Submissions: ' + numPosts).cyan
+consolex.log 'cyan', '---------------- Submission Details --------------------'
+consolex.log 'cyan', 'Accounts file: ' + fileAccounts
+consolex.log 'cyan', 'Articles file: ' + fileArticles
+consolex.log 'cyan', 'Backlinks saved to file: ' + fileBacklinks
+consolex.log 'cyan', 'Number of Submissions: ' + numPosts
 
 currentService = 0
 currentStep = 0
@@ -123,7 +123,7 @@ casper.doStep = (objStep, serviceName) ->
     submitArticle = spinner.getArticle(articles, objStep.micro,objStep.noHTML)
     randomAccount = spinner.getAccount(accounts, serviceName)
     str = '-------------- Submit to ' + serviceName+' ----------------'
-    console.log (str).yellow
+    consolex.log 'yellow', str
 # -------------------------- Open ---------------------------------------
   else if objStep.command == 'open'
     @echo 'Opening url '+objStep.url+'...'
@@ -255,7 +255,7 @@ casper.doStep = (objStep, serviceName) ->
       if objStep.confirm
         @waitForSelector objStep.confirm,
           ->
-            @echo 'Confirmed.'
+            @echo 'Found confirm selector.'
           ->
             @echo 'Confirm DOM selector not found', 'ERROR'
             errorMsg()
@@ -263,9 +263,9 @@ casper.doStep = (objStep, serviceName) ->
       if objStep.confirmtxt
         @waitForText objStep.confirmtxt,
           ->
-            @echo 'Confirmed: ' + objStep.confirmtxt
+            @echo 'Found confirm text: ' + objStep.confirmtxt
           ->
-            @echo 'Confirm text not found', 'ERROR'
+            @echo 'Confirm text' + objStep.confirmtxt + 'not found', 'ERROR'
             errorMsg()
             @capture('./capture/error.png')
     else
@@ -334,7 +334,7 @@ casper.doStep = (objStep, serviceName) ->
     if @exists(tempObj)
       submitURL = @getElementAttribute tempObj, 'href'
       backlinksList += submitURL + '\n'
-      console.log ('Submitted post to URL: ' + submitURL).cyan
+      consolex.log 'cyan', 'Submitted post to URL: ' + submitURL
       # Save backlinks.txt
       try
         fs.write fileBacklinks, submitURL, 'a'
@@ -364,11 +364,14 @@ casper.repeat numLoops, ->
         ++currentStep
         if currentStep == service[currentService].steps.length
           serviceName = service[currentService].name
-          console.log ('Completed submit to '+serviceName + '\n').green
+          consolex.log 'green', 'Completed submit to '+serviceName + '\n'
           ++currentService
           currentStep = 0
       return
     return
+
+casper.then ->
+  consolex.log 'blue', 'Submitting links to indexeing services'
 
 casper.repeat numIndexerLoops, ->
   @then ->
@@ -382,7 +385,7 @@ casper.repeat numIndexerLoops, ->
         currentIndexerStep = 0
 
 casper.run ->
-  console.log  ('Finished all submissions.').green
+  consolex.log  'green', 'Finished all submissions.'
   @echo 'Press ctrl C to exit'
   @exit(0)
   @bypass(1)

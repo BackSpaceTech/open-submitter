@@ -10,7 +10,7 @@ SEO Backlinking App
 - Submits backlinks to indexing services
 - Additional services can be added through simple command steps
 
-  [00c3cdf7]: http://backlinksindexer.com/ "Preferred"
+
 ## Prerequisites
 - [NodeJS][ca1dffb7] v4.4.7 or greater
 - [PhantomJS][6997c770] v2.1 or greater

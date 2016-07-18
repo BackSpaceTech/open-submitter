@@ -5,4 +5,4 @@ ok
 #name#
 blogdotcom
 #status#
-ok
+bad

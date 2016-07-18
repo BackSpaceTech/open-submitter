@@ -1,5 +1,5 @@
 fs = require('fs')
-colors = require('colors')
+consolex = require('./console-xtra')
 
 # -------------------- Get random account ----------------------------
 
@@ -122,5 +122,5 @@ exports.getArticle = (articles, microBlog, noHTML) ->
     temp3 = newArticle.body.slice(randomPos, temp)
     newArticle.body = temp1 + temp2 + temp3
 
-  console.log ('Created article: ' + newArticle.title).magenta
+  consolex.log 'magenta', 'Created article: ' + newArticle.title
   newArticle # Return the article to submit

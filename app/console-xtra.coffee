@@ -33,7 +33,7 @@ exports.log = (msgColor, msg) ->
       code: '\x1b[37m'
     }
   ]
-  colorCode = ''
+  colorCode =   ''
   for i in [0...colorsANSI.length]
     if msgColor == colorsANSI[i].text
       colorCode = colorsANSI[i].code
