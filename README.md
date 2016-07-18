@@ -17,7 +17,7 @@ SEO Backlinking App
 - [PhantomJS][6997c770] v2.1 or greater
 - [CasperJS][476ee510] v1.1.1 or greater
 - [Cmder][9924c39d] (optional)
-- [The Best Spinner][67703f2d] (Optional)
+- [The Best Spinner][67703f2d] (optional)
 
   [ca1dffb7]: http://nodejs.org/ "NodeJS"
   [6997c770]: http://phantomjs.org/ "PhantomJS"

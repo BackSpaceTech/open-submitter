@@ -26,6 +26,7 @@ Depending on where you installed the software the paths will be similar to:
 - C:\phantomjs
 - C:\casperjs\batchbin
 
+
 ## Check Prerequisities
 After the executables paths have been added to your environment variables you can check they are installed correctly using the following commands from the command line:
 - node --version
@@ -36,7 +37,9 @@ If everything is installed correctly each command will return the curent version
 
 ## Download latest release of Open Submitter
 
-Go to the releases page.
+Go to the main [repository page](https://github.com/BackSpaceTech/open-submitter).
+
+Click the releases.
 
 ![](./img/install4.PNG)
 
