@@ -1,7 +1,7 @@
 # Open Submitter Documentation
 
 ## Contents:
-- [Set Up CLI][f159407d]
+- [Set Up Open Submitter][f159407d]
 - [Accounts][f3cb5827]
 - [Graphical User Interface (GUI)][90d887fa]
 - [Articles][305c1ef4]

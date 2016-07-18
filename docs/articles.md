@@ -10,7 +10,7 @@ Open Submitter article submission files contain the following information:
 
 ## Using Spin Syntax
 
-Spin syntax is used to allow Open Submitter to create unlimited unique articles to be submitted to services. Spin is surrunded by curly brackets {} and synonyms are separated by pipe symbols | e.g.
+Spin syntax is used to allow Open Submitter to create unlimited unique articles to be submitted to services. Spin is surrounded by curly brackets {} and synonyms are separated by pipe symbols | e.g.
 
 **Phrase:**
 
@@ -53,7 +53,7 @@ Creating articles of any size in spin syntax manually is very slow process. The 
 
 Open the GUI and click "Create Article"
 
-Enter the title, description and body of your article.
+Enter the title, description and body of your article. Click Spin Preview to see the results after spinning.
 
 ![](./img/articles.PNG)
 
@@ -67,11 +67,13 @@ To create backlinks in your article body and description where you want insert l
 
 Keywords and links need to be supplied for Open Submitter to use. These are comma separated. Open Submitter will select randomly. Spin syntax can be used to group together long tail keywords and less important links. This way you can influence the ratio of selection of links and keywords.
 
+
 ![](./img/articles3.PNG)
 
 ## Add Images
 
 Images make articles look more interesting and less spammy. Open Submitter selects images at random from the images list supplied. These are comma separated URLs. The imgaes are randomly located vertically and randomly floating left or right. Please note not all services accept images.
+
 
 ![](./img/articles4.PNG)
 
@@ -84,7 +86,10 @@ Click on "Preview Submission" to see your final submission.
 
 ![](./img/articles6.PNG)
 
-Now Save the article submission file to the articles folder. Please note it must be saved in the article folder only for open submitter to find it. If you have multiple submission files you can use multiple submission file names. All file names must have the .txt file extension. If you want multiple submissions in a single file simply use an editor such as Notepad++ and add then one after the other. Open Submitter will randomly select articles if multiple are available.
+
+Now Save the article submission file to the articles folder (you will need to create this folder). Please note it must be saved in the article folder only for open submitter to find it. Make sure the folder name is lowercase. If you have multiple submission files you can use multiple submission file names. All file names must have the .txt file extension. If you want multiple submissions in a single file simply use an editor such as Notepad++ and add them one after the other. Open Submitter will randomly select articles if multiple are available.
+
+
 
 ![](./img/articles7.PNG)
 

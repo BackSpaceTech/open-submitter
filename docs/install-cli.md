@@ -1,4 +1,4 @@
-# Set Up Open Submitter CLI
+# Set Up Open Submitter
 
 How to set up the Open Submitter Command Line Interface (CLI). The CLI is required to submit articles to services.
 
