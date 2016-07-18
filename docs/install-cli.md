@@ -17,7 +17,7 @@ NPM modules need to be installed globally (npm install -g):
   [9924c39d]: http://cmder.net/ "Cmder"
 
 ## Update Environment Variables
-Make sure your path environment variables are updated for PhantomJS, CasperJS and Cmder with the executable path.
+Make sure your path environment variables are updated for NodeJS, PhantomJS, CasperJS and Cmder with the executable path.
 Depending on where you installed the software the paths will be similar to:
 - C:\Program Files\nodejs\
 - C:\phantomjs
