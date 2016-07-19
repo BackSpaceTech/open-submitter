@@ -35,6 +35,11 @@ After the executables paths have been added to your environment variables you ca
 
 If everything is installed correctly each command will return the curent version details.
 
+If you have any problems installing the prerequisite frameworks please post a question on [Stack Overflow][0f0072cf].
+
+
+  [0f0072cf]: stackoverflow.com "Open Submitter Stack Overflow"
+
 ## Download latest release of Open Submitter
 
 Go to the main [repository page](https://github.com/BackSpaceTech/open-submitter).
