@@ -29,7 +29,8 @@ SEO Spinning and Backlinking App
 ## More details in the [documentation][bd90079e]
 
 
-Open Submitter is free and open source software licensed under the [GNU GPL v3][471c7b4b]
+Open Submitter is free and open source software licensed under the [GNU GPL v3][471c7b4b]. Copyright [BackSpace Technology.][520d0698]
 
   [bd90079e]: https://github.com/BackSpaceTech/open-submitter/tree/master/docs "Open Submitter Documentation"
   [471c7b4b]: https://www.gnu.org/licenses/gpl-3.0.en.html "Open Submitter GNU GPL License"
+  [520d0698]: https://backspace.academy/ "BackSpace Technology"
