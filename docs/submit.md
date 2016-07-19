@@ -35,10 +35,26 @@ The submit service will now start submitting the article to the services.
 ![](./img/submit3.PNG)
 
 
+After each article is submitted it is added to the backlinks file. When all the submissions have been completed Open Submitter will submit the URLs to the indexing service.
 
-## Enabling and Disabling Services
+If any services are not working they can be disabled (ses below).
 
-Not all services are reliable and many seem to be down more than they are up.
+
+## Enabling and Disabling Unreliable Services
+
+Not all services are reliable and many seem to be down more than they are up. Unreliable services can be disabled and enabled back again when reliable. To disable a service open the services.txt file in the setting folder. We recommend using the free app [Notepad++][a35f49bf] as the formatting is not changed when editing:
+
+![](./img/submit5.PNG)
+
+Now change the status of the service from ok to bad.
+
+![](./img/submit4.PNG)
+
+**Note:** Make sure you do not change the file name, otherwise Open Submitter won't find it again.
+
+  [a35f49bf]: https://notepad-plus-plus.org/ "Notepad++"
+
+
 
 
 
