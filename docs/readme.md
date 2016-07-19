@@ -20,7 +20,8 @@
 
 ## More tutorials and information at the [Open Submitter Home Page][76d3e968]
 
-Free and open source software licensed under the [GNU GPL v3][efb18a06].
+Free and open source software licensed under the [GNU GPL v3][efb18a06]. Copyright [BackSpace Technology][3ed15560].
 
   [76d3e968]: http://opensubmitter.org/ "Free and open source backlinking software app."
   [efb18a06]: https://www.gnu.org/licenses/gpl-3.0.en.html "Open Submitter GNU GPL License"
+  [3ed15560]: https://backspace.academy/ "BackSpace Academy"
