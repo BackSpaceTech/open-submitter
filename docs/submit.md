@@ -14,8 +14,6 @@ The submit service must be started through the Command Line Interface (CLI). Ope
 
 ![](./img/submit.PNG)
 
-![](./img/submit2.PNG)
-
 
 To start the service run the following casperjs command:
 - casperjs (the headless webkit service)
@@ -27,8 +25,10 @@ To start the service run the following casperjs command:
 
 e.g.
 
-casperjs casperjs open-submitter.js accounts articles backlinks 5
+casperjs open-submitter.js accounts articles backlinks 5
 
+
+![](./img/submit6.PNG)
 
 The submit service will now start submitting the article to the services.
 
@@ -36,6 +36,7 @@ The submit service will now start submitting the article to the services.
 
 
 After each article is submitted it is added to the backlinks file. When all the submissions have been completed Open Submitter will submit the URLs to the indexing service.
+
 
 If any services are not working they can be disabled (ses below).
 
@@ -53,9 +54,6 @@ Now change the status of the service from ok to bad.
 **Note:** Make sure you do not change the file name, otherwise Open Submitter won't find it again.
 
   [a35f49bf]: https://notepad-plus-plus.org/ "Notepad++"
-
-
-
 
 
   [35fd80d0]: http://cmder.net/ "Cmder Console"
