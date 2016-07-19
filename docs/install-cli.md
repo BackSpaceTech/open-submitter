@@ -5,7 +5,6 @@ How to set up the Open Submitter Command Line Interface (CLI). The CLI is requir
 ## Prerequisites
 Please ensure the following prerequisite frameworks and applications are installed.
 
-NPM modules need to be installed globally (npm install -g):
 - [NodeJS][ca1dffb7] v4.4.7 or greater
 - [PhantomJS][6997c770] v2.1 or greater
 - [CasperJS][476ee510] v1.1.1 or greater
