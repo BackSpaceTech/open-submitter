@@ -1,5 +1,5 @@
 # Open Submitter
-SEO Backlinking App
+SEO Spinning and Backlinking App
 
 ![](./docs/img/home-image.png)
 
